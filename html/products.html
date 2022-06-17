@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/fotter.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b9c33b44d0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>overstock.com</title>
+    <!-- <style>
+#container{
+    display: flex;
+width: 85%;
+gap: 20px;
+
+}
+/* dropdown***************** */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      #slider {
+        border: 1px solid red;
+        /* display: flex; */
+        max-width: 30%;
+       max-height: fit-content;
+        margin-top: 350px;
+      }
+      #slider > #bar {
+        width:250px;
+        overflow: scroll;
+        height: 400px;
+        overflow-x: hidden;
+        cursor: pointer;
+      }
+      hr {
+        margin-left: 15%;
+      }
+      #slider {
+        width: 21%;
+        margin-left: 4%;
+      }
+   #slider>#bar>#ull>li>a {
+        position: relative;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        padding-left: 39px;
+        font-weight:490;
+        display: block;
+        width: 100%;
+        border-left: 4px solid transparent;
+      }
+      #slider>#bar>#ull>li {
+        line-height: 41px;
+        list-style: none;
+      }
+      #slider>#bar>#ull>li{
+        position: static;
+        display: none;
+      }
+ 
+  
+      #ul,
+      #ul1,
+      #ul2,
+      #ul3,
+      #ul4,
+      #ul5,
+      #ul6,
+      #ul7,
+      #ul8,
+      #ul9 {
+        color: grey;
+        cursor: pointer;
+      }
+      
+      #menu :hover {
+        text-decoration: underline;
+      }
+      .show{
+        display: block;
+      }
+  
+      .show1 {
+        display: block;
+      }
+    .show2 {
+        display: block;
+      }
+      .show3 {
+        display: block;
+      }
+      .show4 {
+        display: block;
+      }
+      .show5 {
+        display: block;
+      }
+      .show6 {
+        display: block;
+      }
+      .show7 {
+        display: block;
+      }
+      .show8 {
+        display: block;
+      }
+      .show9 {
+        display: block;
+      }
+
+      #menu {
+        margin-left: 20%;
+      }
+      #bar> ul>li>a>span {
+        position: absolute;
+        top: 49%;
+        right: 21px;
+        transform: translateY(-50%);
+        font-size: 23px;
+        transition: transform 0.5s;
+      } 
+     /* #slider> nav > ul > li > a  >span.rotate {
+        transform: translateY(-50%) rotate(-180deg);
+      } */
+
+
+
+
+
+
+
+
+/* *************************slider ends******************************* */
+
+/* ************************sorting pric starts********************************* */
+#sorting_div{
+  border: 4px black;
+  width:150px ;
+  height:50px ;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-contentacc {
+    display: none;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px;
+    background-color: white;
+    top: 30px;
+  }
+
+  .dropdown-contentacc a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-contentacc a:hover {
+    background-color: #ddd;
+  }
+  .dropbtn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #ffffff;
+  }
+  .dropdown-contentacc a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-contentacc a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdownacc:hover .dropdown-contentacc {
+    display: block;
+  }
+
+/* *****************************sorting price ends************************ */
+#sort_appenddiv {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    width:50%;
+}
+
+#sort_appenddiv>select {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#sort_appenddiv>select>option {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+        #append_products{
+     /* border: 4px solid green;  */
+    display: grid;
+    max-width: 40%;
+    grid-template-columns: repeat(3,1fr);
+    /* position: relative; */
+    /* margin-left: 200px; */
+    margin-top: 300px;
+    /* gap: 20px; */
+        }
+
+   .appdiv {
+  border: 5px solid rgba(0, 0, 0, 0.144);  
+ width: 300px;
+/* height: 700px; */
+height:auto;
+}  
+.productsimg {
+  /* border: 1px solid red; */
+    width:290px;
+    
+    margin-top: 20px;
+
+}
+.reviews{
+     
+    position: relative;
+    font-size: 12px;
+      bottom: 280px; 
+    
+    left: 210px;
+    border: none;
+    /* background: white; */
+    
+}
+.title{
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    height: 80px;
+    margin-bottom: 170px;
+    font-weight: bold;
+}
+
+.rating{
+    
+    margin-top:-180px
+}
+.btndiv{
+   color: red;
+    margin-top: 20px;
+   
+    width: fit-content;
+}
+
+#addtocart{
+  
+    padding: 5px;
+    border-radius: 10px;
+    width: 110px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* margin-top: -50px; */
+    background:rgb(0,0,0);
+    border: none;
+    color: white;
+    font-size: 11px;
+}
+
+#addtowish{
+    padding: 5px;
+    border-radius: 10px;
+    width: 130px;
+    margin: 5px;
+    margin-top: -80px;
+    background: rgb(255, 255, 255);
+    background:rgb(0,0,0);
+    color:white;
+    font-size: 11px;
+    margin-left: 30px;
+}
+#nextpage{
+  display: flex;
+  width:300px;
+  height: 60px;
+}
+#sorting_div{
+   display: flex;
+height: 50px;
+width: 150px;
+margin-bottom: -300px;
+margin-left: 80%;
+
+/* margin-bottom:-200px; */
+
+} 
+    </style> -->
+</head>
+<body>
+  <!-- navbar starts -->
+  <div id="navbar">
+   
+    <!-- <-----------navbar----------->
+    <div id="navbar1">
+    </div>
+
+
+    <!-- <----------bootStrap---------->
+    <div id="bottom_nav">
+    </div>
+</div>
+<!-- navbar ends -->
+
+<div id="sorting_div">
+  <button id="low" onclick="low()">low to High</button>
+  <button id="high" onclick="high()">High to low</button>
+  </div>
+<div id="container">
+  <!-- sdiebar starts -->
+  
+  
+  <div id="slider">
+    <div><h4>Categires</h4></div>
+    <br>
+    <div> <h4>colors</h4></div>
+    <br>
+
+    <div> <h4>Shape</h4></div>
+    <br>
+    <div> <h4>Rugsizes</h4></div>
+    <br>
+
+    <div><h4>Materials</h4></div>
+    <br>
+
+    <div> <h4>Brands</h4></div>
+    <br>
+
+    <div> <h4>Pie Heights</h4></div>
+    <br>
+
+
+  <!-- <nav id="bar">
+  
+  <ul id="ull">
+  <li>
+  <a class="btn1">Categories
+  <span class="fas fa-caret-down first"></span>
+  </a>
+  <hr>
+  <ul id="ul">
+  <li><input id="menu" type="checkbox" />On Sale Unique</li>
+  <li><input id="menu" type="checkbox" />Area Rugs</li>
+  <li><input id="menu" type="checkbox" />Kitchen Rugs</li>
+  <li><input id="menu" type="checkbox" />Rug Pads</li>
+  </ul>
+  </li>
+  
+  
+  
+  <li>
+  <a class="btn2">Rugsizes
+  <span class="fas fa-caret-down second"></span>
+  </a>
+  <hr>
+  <ul id="ul1">
+  <li><input id="menu" type="checkbox" />6'Runner</li>
+  <li><input id="menu" type="checkbox" />8'Runner</li>
+  <li><input id="menu" type="checkbox" />10'Runner</li>
+  <li><input id="menu" type="checkbox" />10'Runner</li>
+  <li><input id="menu" type="checkbox" />12'Runner</li>
+  <li><input id="menu" type="checkbox" />14'Runner</li>
+  <li><input id="menu" type="checkbox" />16'Runner</li>
+  <li><input id="menu" type="checkbox" />18'Runner</li>
+  <li><input id="menu" type="checkbox" />20'Runner</li>
+  </ul>
+  </li>
+  
+  <li>
+  <a class="btn3">Colors
+  <span class="fas fa-caret-down third"></span>
+  </a><hr>
+  <ul id="ul2">
+  <li><input id="menu" type="checkbox" />Blue</li>
+  <li><input id="menu" type="checkbox" />Grey</li>
+  <li><input id="menu" type="checkbox" />Red</li>
+  <li><input id="menu" type="checkbox" />Yellow</li>
+  <li><input id="menu" type="checkbox" />Brown</li>
+  <li><input id="menu" type="checkbox" />Green/li>
+  <li><input id="menu" type="checkbox" />Black</li>
+  <li><input id="menu" type="checkbox" />Blue</li>
+  </ul>
+  </li>
+  
+  <li>
+  <a class="btn4">Materials
+  <span class="fas fa-caret-down fourth"></span>
+  </a><hr>
+  <ul id="ul3">
+  <li><input id="menu" type="checkbox" /> Sofas</li>
+  <li><input id="menu" type="checkbox" /> DESK</li>
+  <li><input id="menu" type="checkbox" /> RUGS</li>
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a class="btn5">Styles
+  <span class="fas fa-caret-down fifth"></span>
+  </a><hr>
+  <ul id="ul4">
+  <li><input id="menu" type="checkbox" />Shang</li>
+  <li><input id="menu" type="checkbox" />Modren</li>
+  <li><input id="menu" type="checkbox" />Kids</li>
+  <li><input id="menu" type="checkbox" />Vintage/li>
+  <li><input id="menu" type="checkbox" />Traditional</li>
+  <li><input id="menu" type="checkbox" />FarmHouse</li>
+  <li><input id="menu" type="checkbox" />Marcon</li>
+  
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a class="btn6">Brands
+  <span class="fas fa-caret-down sixth"></span>
+  </a><hr>
+  <ul id="ul5">
+  <li><input id="menu" type="checkbox" /> Safavei</li>
+  <li><input id="menu" type="checkbox" /> Alexjander</li>
+  <li><input id="menu" type="checkbox" />Nuloom</li>
+  <li><input id="menu" type="checkbox" />Nurson</li>
+  <li><input id="menu" type="checkbox" />Calvein Kelvin</li>
+  <li><input id="menu" type="checkbox" />unique loom</li>
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a class="btn7">Shapes
+  <span class="fas fa-caret-down seventh"></span>
+  </a><hr>
+  <ul id="ul6">
+  <li><input id="menu" type="checkbox" /> Round</li>
+  <li><input id="menu" type="checkbox" /> Square</li>
+  <li><input id="menu" type="checkbox" /> Rectangle</li>
+  <li><input id="menu" type="checkbox" /> Oval</li>
+  <li><input id="menu" type="checkbox" />Octagon</li>
+  <li><input id="menu" type="checkbox" />Runner</li>
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a class="btn8">Upholstery Materials
+  <span class="fas fa-caret-down eighth"></span>
+  </a><hr>
+  <ul id="ul7">
+  <li><input id="menu" type="checkbox" /> Platform Sofas</li>
+  <li><input id="menu" type="checkbox" /> Panel Sofas</li>
+  <li><input id="menu" type="checkbox" /> Pages</li>
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a class="btn9">Pattrens<span class="fas fa-caret-down ninth"></span>
+  </a><hr>
+  <ul id="ul8">
+  <li><input id="menu" type="checkbox" /> Solid</li>
+  <li><input id="menu" type="checkbox" />Geometric</li>
+  <li><input id="menu" type="checkbox" />Oriental</li>
+  <li><input id="menu" type="checkbox" />Abstract</li>
+  <li><input id="menu" type="checkbox" />Ombre</li>
+  <li><input id="menu" type="checkbox" />Tribal</li>
+  </ul>
+  </li>
+  </li>
+  
+  <li>
+  <a href="#" class="finishes-btn">Pie-Heights
+  <span class="fas fa-caret-down tenth"></span>
+  </a><hr>
+  <ul id="ul9">
+  <li><input id="menu" type="checkbox" />0.25-0.5 inc</li>
+  <li><input id="menu" type="checkbox" />Less than 0.25 inc</li>
+  <li><input id="menu" type="checkbox" />More than 1 inc</li>
+  <li><input id="menu" type="checkbox" />0.50-1 inc</li>
+  </ul>
+  </li>
+  </li>
+  
+  </nav> -->
+  </div>
+  
+  <div id="append_products">
+
+  </div>
+  <!-- </div> -->
+  </div>
+    <!-- add to cart div ends -->
+
+
+
+<div id="nextpage">
+
+</div>
+<div id="Fotter"></div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+<script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"></script>
+<script type="module">
+ import {  navbar, bottom_nav } from '../components/navbar.js';
+
+document.getElementById('navbar1').innerHTML = navbar()
+document.getElementById('bottom_nav').innerHTML = bottom_nav()
+
+    import {footer} from '../components/fotter.js'
+    document.getElementById('Fotter').innerHTML=footer()
+ </script>
+ <script src="../scripts/products.js"></script>
+<!-- <script>
+ $(".btn").click(function () {
+    $(this).toggleClass("click");
+    $("#bar").toggleClass("show");
+  });
+
+  $(".btn1").click(function () {
+    $("nav ul #ul").toggleClass("show");
+    $("nav ul .first").toggleClass("rotate");
+  });
+
+  $(".btn2").click(function () {
+    $("nav ul #ul1").toggleClass("show1");
+    $("nav ul .second").toggleClass("rotate");
+  });
+
+  $(".btn3").click(function () {
+    $("nav ul #ul2").toggleClass("show2");
+    $("nav ul .third").toggleClass("rotate");
+  });
+
+  $(".btn4").click(function () {
+    $("nav ul #ul3").toggleClass("show3");
+    $("nav ul .fourth").toggleClass("rotate");
+  });
+
+  $(".btn5").click(function () {
+    $("nav ul #ul4").toggleClass("show4");
+    $("nav ul .fifth").toggleClass("rotate");
+  });
+
+  $(".btn6").click(function () {
+    $("nav ul #ul5").toggleClass("show5");
+    $("nav ul .sixth").toggleClass("rotate");
+  });
+
+  $(".btn7").click(function () {
+    $("nav ul #ul6").toggleClass("show6");
+    $("nav ul .seventh").toggleClass("rotate");
+  });
+
+  $(".btn8").click(function () {
+    $("nav ul #ul7").toggleClass("show7");
+    $("nav ul .eighth").toggleClass("rotate");
+  });
+
+  $(".btn9").click(function () {
+    $("nav ul #ul8").toggleClass("show8");
+    $("nav ul .ninth").toggleClass("rotate");
+  });
+
+  $(".finishes-btn").click(function () {
+    $("nav ul #ul9").toggleClass("show9");
+    $("nav ul .tenth").toggleClass("rotate");
+  });
+
+
+  $("nav ul li").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+
+
+var cartarr=JSON.parse(localStorage.getItem("cartproducts"))||[]
+
+let productdata = [
+  {
+    name:"SAFAVIEH Adirondack Vera Modern Ombre Distressed",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/57e55b6b50af4de47b5b254913333668cb30dec4/SAFAVIEH-Adirondack-Vera-Modern-Ombre-Distressed-Stripe-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    
+    ratings: "⭐️⭐️⭐️⭐️⭐️",
+    price:+"2110.99",
+    desc: "Add some texture and color to your living room while protecting your floors with this charming Adirondack Vera area rug. Machine-woven for optimal durability",
+    reviews: 500,
+
+  },
+  {
+    name: "SAFAVIEH Vision Tanasa Modern Ombre Tonal Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/990f35cac9e50ad0661788cf2844ad71bcb70e47/SAFAVIEH-Vision-Tanasa-Modern-Ombre-Tonal-Rug.jpg",
+    ratings: "⭐️⭐️⭐️⭐️⭐️",
+    price: +"2181.53",
+      reviews: 200,
+      desc: "Complement your Scandinavian or bohemian home decor with this charming Tulum Bora area rug. Machine-woven of polypropylene, this rug is extremely durable for use in high-traffic areas.",
+
+  },
+  {
+    name: "nuLOOM Wynn Braided Indoor/Outdoor Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/cd29d00fd173b45bcd9d95ae3c483aa2de38b390/SAFAVIEH-Tulum-Bora-Moroccan-Boho-Chic-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2286.90",
+      desc: "Complement your Scandinavian or bohemian home decor with this charming Tulum Bora area rug.  ",
+      reviews: 136,
+  },
+  {
+    name:"SAFAVIEH California Shag Izat 2-inch Thick Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/fa0de7e5f6db966631851fdd3f058a6b965ff170/SAFAVIEH-California-Shag-Izat-2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️⭐️",
+    price: +"3030.75",
+    desc: "Elevate your living room or bedroom decor with this transitional area rug from Safavieh. This rug features a slightly distressed medallion pattern  extremely to your living room while",
+    reviews: 29,
+  },
+  {
+    name: "SAFAVIEH Madison Avery Boho Chic Distressed Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/205c6208408054a206a0a9fa356db59c208345f9/SAFAVIEH-Madison-Avery-Boho-Chic-Distressed-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2342.27",
+    desc: "A marvelous exhibit of trendsetting transitional rugs, the Madison Collection instills life into extraordinary spaces. Expertly machine-woven, these rugs are easy-care ",
+    reviews: 200,
+  },
+  {
+    name: "nuLOOM Wynn Braided Indoor/Outdoor Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/6743ce0acd8cab270fd283311e5fc023542621b4/nuLOOM-Wynn-Braided-Indoor-Outdoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2871.80",
+    desc: "Bring rustic texture to your entryway or living room with the Wynn area rug from nuLOOM. The stain-resistant polypropylene pile features a braided design",
+    reviews: 300,
+  },
+  {
+    name: "SAFAVIEH California Shag Izat 2-inch Thick Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/fa0de7e5f6db966631851fdd3f058a6b965ff170/SAFAVIEH-California-Shag-Izat-2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3030.75",
+     desc: "SAFAVIEH's California Shag Collection imparts breezy coastal vibes throughout room décor.",
+    reviews: 250,
+  },
+  {
+    name: "SAFAVIEH California Shag Izat 2-inch Thick Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/fa0de7e5f6db966631851fdd3f058a6b965ff170/SAFAVIEH-California-Shag-Izat-2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2344.94",
+    desc: "This Tiffany area rug features a bohemian pattern and is made with polypropylene and polyester material. This collection features a globally inspired ",
+    reviews: 300,
+    
+  },
+  {
+    name: "Alexander Home Isabelle Traditional Printed Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/1c9f01a5d19453e2cff0b4fa297e1822242ec376/Alexander-Home-Isabelle-Traditional-Printed-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3669.22",
+    desc: "Decorate your home with this lovely printed area rug. This printed power-loomed construction has intricate designs depicting individual knots with a worn, subtle patina",
+    reviews: 300,
+  },
+  {
+    name: "SAFAVIEH Madison Snowflake Medallion Rustic Farmhouse Distressed Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/f3740e332b1b54bfccec1ee81ca045074a93a275/SAFAVIEH-Madison-Snowflake-Medallion-Rustic-Farmhouse-Distressed-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2344.94",
+    desc: "Add a touch of boho farmhouse flair with the Madison Snowflake area rug. Featuring a stunning medallion design with a deliberate distressed effect,",
+    reviews: 235,
+  },
+  {
+    name: "SAFAVIEH Madison Avery Boho Chic Distressed Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/5811de7f16d999898940c901d40eace16e52d0b9/Safavieh-Madison-Avery-Boho-Chic-Distressed-Rug.jpg",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2342.27",
+    desc: " Expand your fridge space with this convenient under-counter refrigerator drawer unit from Thor Kitchen",
+    reviews: 100,
+  },
+  {
+    name: "nuLOOM Moroccan Blythe Boho Trellis Area Rug",
+    img_url:"https://ak1.ostkcdn.com/images/products/is/images/direct/16cb8a4b0c88ab9dd9d67af84e6f647e79e65b33/The-Curated-Nomad-Ashbury-Moroccan-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2321.73",
+    desc: "The Avery rug from SAFAVIEH's Madison Collection brings an incredible display of trendy artistry to any room.",
+    reviews: 100,
+
+    
+  },
+//   sdkkfd
+  
+  {
+    name: "SAFAVIEH Florida Shag Sigtraud Abstract Waves 1.2-inch Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/44d606cf7157741e1e1e4d6b1ec3989ada1d44b1/SAFAVIEH-Florida-Shag-Sigtraud-Abstract-Waves-1.2-inch-Thick-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3873.71",
+    desc: "The epitome of understated elegance is displayed in SAFAVIEH's blissfully textured shag rug. Rich colors coalesce for optimum versatility, suiting this rug to any space in the home, including high-traffic areas.",
+    reviews: 250,
+  },
+  {
+    name: "Martinque Borders Navy Indoor/Outdoor Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/859839907fefe4feab22c56fc3518bbbb088be99/The-Curated-Nomad-Wilson-Borders-Navy-Indoor-Outdoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3025.39",
+    desc: "Reinvigorate the look of your porch or veranda with this attractive Wilson area rug from The Curated Nomad. Machine-woven from polypropylene and synthetic fiber for use both indoors",
+    
+  },
+  {
+    name: "SAFAVIEH Madison Liboria Modern Abstract Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/147536133f867969897adc5c75ccc99e25c63522/SAFAVIEH-Madison-Liboria-Modern-Abstract-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2533.36",
+    desc: "Make an exhibition out of your living space with the robust and dazzling design of this rug. The expertly machine woven design is perfectly posh and wonderfully resilient through years of use.",
+    reviews: 165,
+  },
+  {
+    name: "SAFAVIEH Courtyard Vickie Indoor/ Outdoor Waterproof Patio Backyard Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/942768b65b094e652b191a695b027a98f8537c3e/SAFAVIEH-Courtyard-Vickie-Indoor--Outdoor-Patio-Backyard-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price:+"2448.53",
+    desc: "Perfect for any backyard, patio, deck, sunroom, veranda, or poolside, this stylish rug from the Courtyard Collection is a practical addition to any outdoor or indoor living space.",
+    reviews: 150,
+  },
+  {
+    name: "HOMCOM Stand Mixer with 6+1P Speed, 600W Tilt Head Kitchen Electric Mixer with 6 Qt Stainless Steel Mixing Bowl",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/cbe9681a6910db3abb8859a838e21d61e41b85dc/Miranda-Haus-Modern-Floral-Patchwork-Polypropylene-Indoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"1737.72",
+    desc: "Freshen up your indoor decor with this durable area rug from Miranda Haus. The stain-resistant polypropylene pile is detailed with a floral patchwork pattern for botanical texture.",
+    reviews: 100,
+  },
+  {
+    name: "SAFAVIEH Handmade Natura Fanette Wool Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/34f931ef3e054ee0c0464ac1206a5cb5a976076e/SAFAVIEH-Handmade-Natura-Fanette-Wool-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3220.06",
+    desc: "The epitome of sophisticated beach house style, the Natura Collection exudes an artisan-crafted look and texture.",
+    reviews: 320,
+  },
+  {
+    name: "SAFAVIEH Courtyard Marolyn Indoor/ Outdoor Waterproof Patio Backyard Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/d8fcd2d2095055cd4513ce48ce4eb1cb62cae60a/Safavieh-Courtyard-Marolyn-Indoor--Outdoor-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2364.59",
+    desc: "Perfect for any backyard, patio, deck, sunroom, veranda, or poolside, this stylish rug from the Courtyard Collection is a practical addition to any outdoor or indoor living space.",
+    reviews: 200,
+    
+  },
+   {
+    name: "Professional 1.2 Cu.Ft. Microwave and Grill Oven",
+    img_url:
+      "https://ak1.ostkcdn.com/images/products/is/images/direct/b261e4efc72e38316a530df44fa00a0c64eaaf87/Unique-Loom-Maria-Del-Mar-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"1390.98",
+    desc: "Complete your glam aesthetic with the Janie rug from nuLOOM. Made of polyester and polypropylene, the low-profile pile is accented with a splatter-like abstract pattern.",
+    reviews: 249,
+    
+  },
+  {
+    name: "SAFAVIEH Vision Tanasa Modern Ombre Tonal Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/5d7e7cc47b251ac799c247669676f0409c3119b2/nuLOOM-Solid-Border-Outdoor--Indoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️⭐️",
+    price: +"2181.53",
+      reviews: 200,
+      desc: "Complement your Scandinavian or bohemian home decor with this charming Tulum Bora area rug. Machine-woven of polypropylene, this rug is extremely durable for use in high-traffic areas.",
+
+  },
+  {
+    name: "nuLOOM Wynn Braided Indoor/Outdoor Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/3773836388bc0218cb5d4bdfa2e958a71ca53c72/Nourison-Sublime-Vintage-Abstract-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2871.80",
+    desc: "Bring rustic texture to your entryway or living room with the Wynn area rug from nuLOOM. The stain-resistant polypropylene pile features a braided design",
+    reviews: 300,
+  },
+  {
+    name: "SAFAVIEH California Shag Izat 2-inch Thick Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/d1ee7b1cb2fe8421bb5014e2c8735e5b7218c517/JONATHAN-Y-Trebol-Bohemian-Vintage-Moroccan-Traditional-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"3030.75",
+     desc: "SAFAVIEH's California Shag Collection imparts breezy coastal vibes throughout room décor.",
+    reviews: 250,
+  },
+  {
+    name: "SAFAVIEH California Shag Izat 2-inch Thick Area Rug",
+    img_url: "https://ak1.ostkcdn.com/images/products/is/images/direct/702d5fcb86268c054a5a64b79b50e811dbd39f58/Well-Woven-Medusa-Sol-Lattice-Trellis-Indoor-Outdoor-Area-Rug.jpg?imwidth=480&impolicy=medium",
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: +"2344.94",
+    desc: "This Tiffany area rug features a bohemian pattern and is made with polypropylene and polyester material. This collection features a globally inspired ",
+    reviews: 300,
+    
+  },
+
+];
+console.log(productdata)
+
+var productdiv = document.getElementById("append_products");
+
+productdata.map((elem) => {
+  var dox = document.createElement("div");
+  dox.setAttribute("class", "appdiv");
+
+  var centering = document.createElement("center");
+  var img = document.createElement("img");
+  img.setAttribute("class","productsimg")
+  img.src = elem.img_url;
+  centering.append(img);
+
+  var reviews = document.createElement("button");
+  reviews.setAttribute("class","reviews")
+  reviews.innerText = "❤️" + elem.reviews;
+  reviews.setAttribute("id", "review");
+
+  var title = document.createElement("h5");
+  title.setAttribute("class","title")
+  title.innerText = elem.name;
+
+  var rating = document.createElement("div");
+  rating.setAttribute("class","rating")
+  rating.innerText = elem.ratings;
+  var des = document.createElement("p");
+  des.innerText =  "Description"+"-"+elem.desc;
+  var btndiv = document.createElement("div");
+
+btndiv.setAttribute("class","btndiv")
+  var btn = document.createElement("h4");
+  
+
+  btn.innerText = "Sale INR"+" - " + elem.price;
+
+  btndiv.append(btn);
+// console.log(btn)
+  var addtocart = document.createElement("button");
+  addtocart.innerText = "Add To Cart";
+  addtocart.setAttribute("id", "addtocart");
+
+  addtocart.onclick = () => {
+
+    if (cartarr.length === 0) {
+
+      let obj = {
+        name: elem.name,
+        pic: elem.img_url,
+        prodQuant: 1,
+        price: (Math.round (Number(elem.price) * 100) / 100) * 1,
+      //  price:elem.price
+    };
+      
+      cartarr.push(obj);
+      localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+      total_cart.textContent = cartarr.length;
+    } 
+    else {
+      
+      let flag = false;
+      for (let i = 0; i < cartarr.length; i++){
+        if (elem.name === cartarr[i].name){
+          cartarr[i].prodQuant =cartarr[i].prodQuant+ 1;
+          cartarr[i].price =cartarr[i].prodQuant * (Math.round (Number(elem.price) * 100) / 100) * 1;
+          localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+          flag = true;
+          break;
+        }
+      }
+
+      if (flag === true) {
+      } 
+      else {
+        let obj = {
+          name: elem.name,
+          pic: elem.img_url,
+          prodQuant: 1,
+           price:(Math.round (Number(elem.price) * 100) / 100) * 1,
+          price:elem.price
+        };
+        cartarr.push(obj);
+        localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+        total_cart.textContent = cartarr.length;
+      }
+     
+    }
+  };
+
+  var addtowish = document.createElement("button");
+  addtowish.innerText = "Add To Wishlist";
+  addtowish.setAttribute("id", "addtowish");
+  addtowish.onclick = () => {
+    if (wisharr.length === 0) {
+      let obj = {
+        name: elem.name,
+        pic: elem.img_url,
+        prodQuant: 1,
+        price: (Math.round(elem.price * 100) / 100) * 1,
+      };
+      wisharr.push(obj);
+      localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+    } else {
+      let flag = false;
+      for (let i = 0; i < wisharr.length; i++) {
+        if (elem.name === wisharr[i].name) {
+          alert("Already added in wishlist");
+          flag = true;
+          break;
+        }
+      }
+
+      if (flag === true) {
+      } else {
+        let obj = {
+          name: elem.name,
+          pic: elem.img_url,
+          prodQuant: 1,
+          price: (Math.round(elem.price * 100) / 100) * 1,
+        };
+        wisharr.push(obj);
+        localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+      }
+    }
+  };
+
+  dox.append(
+    centering,
+    reviews,
+    title,
+    rating,
+    btndiv,
+    des,
+    addtocart,
+    addtowish
+  );
+
+  productdiv.append(dox);
+});
+
+var sortproductdiv = document.getElementById("sort_appenddiv");
+
+function sortlh() {
+  prodArr.sort((a, b) => {
+    a = a.price;
+
+    b = b.price;
+
+    return a - b;
+  });
+
+  var sortproductdiv = document.getElementById("sort_appenddiv");
+  sortproductdiv.innerHTML = null;
+
+  var appdiv = document.createElement("div");
+  appdiv.setAttribute("id", "append_products");
+
+  sortproductdiv.append(appdiv);
+
+  prodArr.map((elem) => {
+    var div = document.createElement("div");
+    div.setAttribute("class", "appdiv");
+
+    var centerimg = document.createElement("center");
+    var img = document.createElement("img");
+    img.src = elem.img_url;
+    centerimg.append(img);
+
+    var reviews = document.createElement("button");
+    reviews.innerText = "❤️" + elem.info.reviews;
+    reviews.setAttribute("id", "review");
+
+    var title = document.createElement("h5");
+    title.innerText = elem.name;
+
+    var rating = document.createElement("div");
+    rating.innerText = elem.ratings;
+
+    var des = document.createElement("p");
+    des.innerText = elem.desc;
+
+    var btndiv = document.createElement("div");
+
+    var btn = document.createElement("button");
+    btn.innerText = "$" + elem.price;
+
+    btndiv.append(btn);
+
+    var addtocart = document.createElement("button");
+    addtocart.innerText = "Add To Cart";
+    addtocart.setAttribute("id", "addtocart");
+    addtocart.onclick = () => {
+      cartarr.push(elem);
+
+      localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+    };
+
+    var addtowish = document.createElement("button");
+    addtowish.innerText = "Add To Wishlist";
+    addtowish.setAttribute("id", "addtowish");
+    addtowish.onclick = () => {
+      wisharr.push(elem);
+
+      localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+    };
+
+    div.append(
+      centerimg,
+      reviews,
+      title,
+      rating,
+      des,
+      btndiv,
+      addtocart,
+      addtowish
+    );
+
+    appdiv.append(div);
+  });
+
+  var div = productdiv;
+  div.remove();
+}
+
+function sorthl() {
+  prodArr.sort((a, b) => {
+    a = a.price;
+
+    b = b.price;
+
+    return b - a;
+  });
+
+  var div = productdiv;
+  div.remove();
+  console.log(prodArr);
+
+  var sortproductdiv = document.getElementById("sort_appenddiv");
+  sortproductdiv.innerHTML = null;
+
+  var appdiv = document.createElement("div");
+  appdiv.setAttribute("id", "append_products");
+
+  sortproductdiv.append(appdiv);
+
+  prodArr.map((elem) => {
+    var div = document.createElement("div");
+    div.setAttribute("class", "appdiv");
+
+    var centerimg = document.createElement("center");
+    var img = document.createElement("img");
+    img.src = elem.img_url;
+    centerimg.append(img);
+
+    var reviews = document.createElement("button");
+    reviews.innerText = "❤️" + elem.info.reviews;
+    reviews.setAttribute("id", "review");
+
+    var title = document.createElement("h5");
+    title.innerText = elem.name;
+
+    var rating = document.createElement("div");
+    rating.innerText = elem.ratings;
+
+    var des = document.createElement("p");
+    des.innerText = elem.desc;
+
+    var btndiv = document.createElement("div");
+
+    var btn = document.createElement("button");
+    btn.innerText = "$" + elem.price;
+
+    btndiv.append(btn);
+
+    var addtocart = document.createElement("button");
+    addtocart.innerText = "Add To Cart";
+    addtocart.setAttribute("id", "addtocart");
+    addtocart.onclick = () => {
+      cartarr.push(elem);
+
+      localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+    };
+
+    var addtowish = document.createElement("button");
+    addtowish.innerText = "Add To Wishlist";
+    addtowish.setAttribute("id", "addtowish");
+    addtowish.onclick = () => {
+      wisharr.push(elem);
+
+      localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+    };
+
+    div.append(
+      centerimg,
+      reviews,
+      title,
+      rating,
+      des,
+      btndiv,
+      addtocart,
+      addtowish
+    );
+
+    appdiv.append(div);
+  });
+}
+
+// function sortlh() {
+//   prodArr.sort((a, b) => {
+//     a = a.price;
+
+//     b = b.price;
+
+//     return a - b;
+//   });
+
+//   var sortproductdiv = document.getElementById("sort_appenddiv");
+//   sortproductdiv.innerHTML = null;
+
+//   var appdiv = document.createElement("div");
+//   appdiv.setAttribute("id", "append_products");
+
+//   sortproductdiv.append(appdiv);
+
+//   prodArr.map((elem) => {
+//     var div = document.createElement("div");
+//     div.setAttribute("class", "appdiv");
+
+//     var centerimg = document.createElement("center");
+//     var img = document.createElement("img");
+//     img.src = elem.img_url;
+//     centerimg.append(img);
+
+//     var reviews = document.createElement("button");
+//     reviews.innerText = "❤️" + elem.info.reviews;
+//     reviews.setAttribute("id", "review");
+
+//     var title = document.createElement("h5");
+//     title.innerText = elem.name;
+
+//     var rating = document.createElement("div");
+//     rating.innerText = elem.ratings;
+
+//     var des = document.createElement("p");
+//     des.innerText = elem.desc;
+
+//     var btndiv = document.createElement("div");
+
+//     var btn = document.createElement("button");
+//     btn.innerText = "$" + elem.price;
+
+//     btndiv.append(btn);
+
+//     var addtocart = document.createElement("button");
+//     addtocart.innerText = "Add To Cart";
+//     addtocart.setAttribute("id", "addtocart");
+//     addtocart.onclick = () => {
+//       cartarr.push(elem);
+
+//       localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+//     };
+
+//     var addtowish = document.createElement("button");
+//     addtowish.innerText = "Add To Wishlist";
+//     addtowish.setAttribute("id", "addtowish");
+//     addtowish.onclick = () => {
+//       wisharr.push(elem);
+
+//       localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+//     };
+
+//     div.append(
+//       centerimg,
+//       reviews,
+//       title,
+//       rating,
+//       des,
+//       btndiv,
+//       addtocart,
+//       addtowish
+//     );
+
+//     appdiv.append(div);
+//   });
+
+//   var div = productdiv;
+//   div.remove();
+// }
+
+// function sorthl() {
+//   prodArr.sort((a, b) => {
+//     a = a.price;
+
+//     b = b.price;
+
+//     return b - a;
+//   });
+
+//   var div = productdiv;
+//   div.remove();
+//   console.log(prodArr);
+
+//   var sortproductdiv = document.getElementById("sort_appenddiv");
+//   sortproductdiv.innerHTML = null;
+
+//   var appdiv = document.createElement("div");
+//   appdiv.setAttribute("id", "append_products");
+
+//   sortproductdiv.append(appdiv);
+
+//   prodArr.map((elem) => {
+//     var div = document.createElement("div");
+//     div.setAttribute("class", "appdiv");
+
+//     var centerimg = document.createElement("center");
+//     var img = document.createElement("img");
+//     img.src = elem.img_url;
+//     centerimg.append(img);
+
+//     var reviews = document.createElement("button");
+//     reviews.innerText = "❤️" + elem.info.reviews;
+//     reviews.setAttribute("id", "review");
+
+//     var title = document.createElement("h5");
+//     title.innerText = elem.name;
+
+//     var rating = document.createElement("div");
+//     rating.innerText = elem.ratings;
+
+//     var des = document.createElement("p");
+//     des.innerText = elem.desc;
+
+//     var btndiv = document.createElement("div");
+
+//     var btn = document.createElement("button");
+//     btn.innerText = "$" + elem.price;
+
+//     btndiv.append(btn);
+
+//     var addtocart = document.createElement("button");
+//     addtocart.innerText = "Add To Cart";
+//     addtocart.setAttribute("id", "addtocart");
+//     addtocart.onclick = () => {
+//       cartarr.push(elem);
+
+//       localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+//     };
+
+//     var addtowish = document.createElement("button");
+//     addtowish.innerText = "Add To Wishlist";
+//     addtowish.setAttribute("id", "addtowish");
+//     addtowish.onclick = () => {
+//       wisharr.push(elem);
+
+//       localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+//     };
+
+//     div.append(
+//       centerimg,
+//       reviews,
+//       title,
+//       rating,
+//       des,
+//       btndiv,
+//       addtocart,
+//       addtowish
+//     );
+
+//     appdiv.append(div);
+//   });
+// }
+// function sortcustom() {
+//   prodArr.sort((a, b) => {
+//     a = a.info.reviews;
+
+//     b = b.info.reviews;
+
+//     return b - a;
+//   });
+
+//   var div = productdiv;
+//   div.remove();
+//   console.log(prodArr);
+
+//   var sortproductdiv = document.getElementById("sort_appenddiv");
+//   sortproductdiv.innerHTML = null;
+
+//   var appdiv = document.createElement("div");
+//   appdiv.setAttribute("id", "append_products");
+
+//   sortproductdiv.append(appdiv);
+
+//   prodArr.map((elem) => {
+//     var div = document.createElement("div");
+//     div.setAttribute("class", "appdiv");
+
+//     var centerimg = document.createElement("center");
+//     var img = document.createElement("img");
+//     img.src = elem.img_url;
+//     centerimg.append(img);
+
+//     var reviews = document.createElement("button");
+//     reviews.innerText = "❤️" + elem.info.reviews;
+//     reviews.setAttribute("id", "review");
+
+//     var title = document.createElement("h5");
+//     title.innerText = elem.name;
+
+//     var rating = document.createElement("div");
+//     rating.innerText = elem.ratings;
+
+//     var des = document.createElement("p");
+//     des.innerText = elem.desc;
+
+//     var btndiv = document.createElement("div");
+
+//     var btn = document.createElement("button");
+//     btn.innerText = "$" + elem.price;
+
+//     btndiv.append(btn);
+
+//     var addtocart = document.createElement("button");
+//     addtocart.innerText = "Add To Cart";
+//     addtocart.setAttribute("id", "addtocart");
+//     addtocart.onclick = () => {
+//       cartarr.push(elem);
+
+//       localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+//     };
+
+//     var addtowish = document.createElement("button");
+//     addtowish.innerText = "Add To Wishlist";
+//     addtowish.setAttribute("id", "addtowish");
+//     addtowish.onclick = () => {
+//       wisharr.push(elem);
+
+//       localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+//     };
+
+//     div.append(
+//       centerimg,
+//       reviews,
+//       title,
+//       rating,
+//       des,
+//       btndiv,
+//       addtocart,
+//       addtowish
+//     );
+
+//     appdiv.append(div);
+//   });
+// }
+
+// function sortdiscount() {
+//   prodArr.sort((a, b) => {
+//     a = a.info.discount;
+
+//     b = b.info.discount;
+
+//     return a - b;
+//   });
+
+//   var sortproductdiv = document.getElementById("sort_appenddiv");
+//   sortproductdiv.innerHTML = null;
+
+//   var appdiv = document.createElement("div");
+//   appdiv.setAttribute("id", "append_products");
+
+//   sortproductdiv.append(appdiv);
+
+//   prodArr.map((elem) => {
+//     var div = document.createElement("div");
+//     div.setAttribute("class", "appdiv");
+
+//     var centerimg = document.createElement("center");
+//     var img = document.createElement("img");
+//     img.src = elem.img_url;
+//     centerimg.append(img);
+
+//     var reviews = document.createElement("button");
+//     reviews.innerText = "❤️" + elem.info.reviews;
+
+//     var title = document.createElement("h5");
+//     title.innerText = elem.name;
+
+//     var rating = document.createElement("div");
+//     rating.innerText = elem.ratings;
+
+//     var des = document.createElement("p");
+//     des.innerText = elem.desc;
+
+//     var btndiv = document.createElement("div");
+
+//     var btn = document.createElement("button");
+//     btn.innerText = "$" + elem.price;
+
+//     btndiv.append(btn);
+
+//     var addtocart = document.createElement("button");
+//     addtocart.innerText = "Add To Cart";
+//     addtocart.setAttribute("id", "addtocart");
+//     addtocart.onclick = () => {
+//       cartarr.push(elem);
+
+//       localStorage.setItem("cartProducts", JSON.stringify(cartarr));
+//     };
+
+//     var addtowish = document.createElement("button");
+//     addtowish.innerText = "Add To Wishlist";
+//     addtowish.setAttribute("id", "addtowish");
+//     addtowish.onclick = () => {
+//       wisharr.push(elem);
+
+//       localStorage.setItem("wishProducts", JSON.stringify(wisharr));
+//     };
+
+//     div.append(
+//       centerimg,
+//       reviews,
+//       title,
+//       rating,
+//       des,
+//       btndiv,
+//       addtocart,
+//       addtowish
+//     );
+
+//     appdiv.append(div);
+//   });
+
+//   var div = productdiv;
+//   div.remove();
+//   console.log(prodArr);
+// }
+function low(){
+productdata.sort(function(a,b){
+  return a.price-b.price
+})
+console.log("sdhewqlh")
+}
+
+</script>
+ -->
+
+
